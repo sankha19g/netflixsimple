@@ -1,0 +1,101 @@
+.container{
+  width: 100%;
+}
+.nav-buttons {
+  float: right;
+
+
+}
+
+.logo {
+  float: left;
+  margin-right: auto;
+}
+
+
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+  }
+
+  .nav__black {
+    background-color: #111;
+  }
+  
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-left: 20px;
+    padding: 2px;
+    margin: 15px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 249, 249);
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 16px;
+  }
+
+nav a:hover{
+    background-color: black;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  
+  
+/*notification button */
+
+  .notification-button {
+    height: 30px;
+    width: 30px;
+    background-color: rgb(255, 242, 0);
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    color: black;
+    margin: 6px;
+  }
+  
+  .notification-button:hover {
+    background-color: rgb(208, 12, 12);
+    color: rgb(251, 251, 251);
+    /* transform: scale(1.5); */
+  }
+
+  /*logo*/
+  img{
+  
+    width: 140px;
+    margin-right: 20px;
+    margin :16px;
+  }
+
+  .loginbutton,.joinbutton{
+    background-color: green;
+    padding: 5px;
+    border-radius: 5px ;
+    cursor: pointer;
+  width:50px}
+
+
+
+
+ 

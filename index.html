@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/search.css" />
+    <link rel="stylesheet" href="css/body.css" />
+    <script
+      src="https://kit.fontawesome.com/e39b1fcfaf.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Watch Movies and Shows</title>
+  </head>
+  <body>
+    <nav>
+      <div id="nav" class="nav">
+        <div class="container">
+          <ul>
+            <div class="logo">
+              <img src="images/logo.png" alt="Logo" />
+            </div>
+            <div class="nav-buttons">
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="#movies">MOVIES</a></li>
+              <li><a href="#tvseries">TV SERIES</a></li>
+              <li><a href="categories.html">GENRE</a></li>
+              <li>
+                <div class="header__search">
+                  <form>
+                    <input type="text" placeholder="Search..." />
+                    <button >
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                  </form>
+                </div>
+              </li>
+              <li>
+                <button class="notification-button">
+                  <i class="fa fa-bell"></i>
+                </button>
+              </li>
+              <li>
+                
+                  <button class="loginbutton">Login</button>
+                  <button class="joinbutton">Join</button>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <script>
+      const nav = document.getElementById("nav");
+      window.addEventListener("scroll", () => {
+        if (window.scrollY >= 100) {
+          nav.classList.add("nav__black");
+        } else {
+          nav.classList.remove("nav__black");
+        }
+      });
+    </script>
+
+<!-- header -->
+
+    <header class="banner">
+      <div class="banner__contents">
+        <h1 class="banner__title">Stranger Things</h1>
+       
+                  </div>
+                 
+                  <div class="moviedetails1">
+                    <span class="imdb">7.3 IMDB</span>
+                    <span class="agerating">16+</span>
+                    <span class="duration">2h 21min</span>
+                  </div>
+
+                  <h1 class="banner__description">
+                    "Stranger Things" is a thrilling sci-fi series set in the 1980s, following a group of kids in a small town who encounter 
+                    supernatural forces and government conspiracies when their friend mysteriously disappears, leading them on a quest to 
+                    find him and uncover a parallel dimension called the Upside Down.
+                  </h1>
+        <div class="banner__buttons">
+          <button class="banner__button1"><a href="https://www.youtube.com/embed/b9EkMc79ZSU"  style=" color: white;">Play</a></button>
+          <button class="banner__button2">Add to Watchlist</button>
+          <button class="banner__button3"><a href="https://www.imdb.com/title/tt4574334/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_stran" style=" color: white;">Info</a></button>
+        </div>
+
+    </header>
+
+    <!--  Trending -->
+    <div class="row">
+      <h2 class="trending" style="margin-top: 30px;">Trending Now</h2>
+      <div class="row__posters">
+        <img
+          class="row__poster row__posterLarge"
+          src="https://i.pinimg.com/236x/6d/36/19/6d36195a27770128038989f6071bb8f4.jpg"
+          alt=""
+        />
+
+        <img
+          class="row__poster row__posterLarge"
+          src="https://i.pinimg.com/236x/60/3c/76/603c768008bb6b5543ff2b21eac0f0a9.jpg"
+          alt=""
+        />
+
+        <img
+          class="row__poster row__posterLarge"
+          src="https://i.pinimg.com/236x/85/ae/77/85ae77b56085ea73c502c33c09c71d86.jpg"
+          alt=""
+        />
+
+        <img
+          class="row__poster row__posterLarge"
+          src="https://i.pinimg.com/236x/60/f6/43/60f6438d07c414f36db349badab2db9b.jpg"
+          alt=""
+        />
+
+        <img
+          class="row__poster row__posterLarge"
+          src="images/large-movie5.jpg"
+          alt=""
+        />
+
+        <img
+          class="row__poster row__posterLarge"
+          src="images/large-movie6.jpg"
+          alt=""
+        />
+
+        <img
+          class="row__poster row__posterLarge"
+          src="https://i.pinimg.com/236x/bf/bd/ab/bfbdabcf35335ba4a9e9da652365baaa.jpg"
+          alt=""
+        />
+
+        <img
+          class="row__poster row__posterLarge"
+          src="https://i.pinimg.com/236x/5e/3e/06/5e3e06e2328ed4b5f78d0deec5aa1d0f.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+
+   <!-- genre -->
+
+       <div class="row">
+      <h2>Genre</h2>
+      <div class="row__posters">
+        <img class="row__poster row__posterLarge" src="images/genre/action.jpeg" alt="" />
+
+    <img class="row__poster row__posterLarge" src="images/genre/adventure.jpeg" alt="" />
+
+    <img class="row__poster row__posterLarge" src="images/genre/anime.jpeg" alt="" />
+
+    <img class="row__poster row__posterLarge" src="images/genre/biography.jpeg" alt="" />
+
+    <img class="row__poster row__posterLarge" src="images/genre/bollywood.jpeg" alt="" />
+
+    <img class="row__poster row__posterLarge" src="images/genre/comedy.jpeg" alt="" />
+  <img class="row__poster row__posterLarge" src="images/genre/family.jpeg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="images/genre/history.jpeg" alt="" />
+  
+      <img class="row__poster row__posterLarge" src="images/genre/kdrama.jpeg" alt="" />
+  
+      <img class="row__poster row__posterLarge" src="images/genre/kids.jpeg" alt="" />
+  
+      <img class="row__poster row__posterLarge" src="images/genre/music.jpeg" alt="" />
+  
+      <img class="row__poster row__posterLarge" src="images/genre/romance.jpeg" alt="" />
+  
+ <img class="row__poster row__posterLarge" src="images/genre/scifi.jpeg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="images/genre/superhero.jpeg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="images/genre/documentary.jpeg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="images/genre/thriller.jpeg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="images/genre/talkshow.jpeg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="images/genre/standup.jpeg" alt="" />
+  
+       <img class="row__poster row__posterLarge" src="images/genre/war.jpeg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="images/genre/sports.jpeg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="images/genre/horror.jpeg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="images/genre/fantasy.jpeg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="images/genre/mystery.jpeg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="images/genre/reality tv.jpeg" alt="" />
+   
+
+
+      </div>
+    </div>
+      
+
+    
+  
+ <!-- Hindi -->
+
+ <div class="row">
+  <h2>Hindi Movies</h2>
+  <div class="row__posters">
+    <img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/31/b1/ea/31b1ea4c9e3d8302460b69f00e31c74a.jpg" alt="" />
+
+<img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/a7/bc/31/a7bc318ed1b3df3a5efa8e467c0bb790.jpg" alt="" />
+
+<img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/f8/b2/c4/f8b2c434ccea75a8e018bc882152040d.jpg" alt="" />
+
+<img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/54/d1/cc/54d1cc315cbf1e9cbbe74c075a3bc0c7.jpg" alt="" />
+
+<img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/79/cb/9b/79cb9b766239bb5fc661e113e08c500a.jpg" alt="" />
+
+<img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/a4/b2/12/a4b2125710131c38990f9a0369690f0b.jpg" alt="" />
+<img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/01/75/5e/01755e0b0f6eb8928551d99d7da16048.jpg" alt="" />
+<img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/5c/c5/15/5cc515bd75ad078e0cd5b753db48928a.jpg" alt="" />
+
+<img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/36/cd/df/36cddf255d6e22bebff55de64334b8bc.jpg" alt="" />
+
+<img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/d4/96/d7/d496d7de437abb5821f242aa18286fb9.jpg" alt="" />
+
+<img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/d1/0d/92/d10d92ae3118526bfc0954fb27e4c6dc.jpg" alt="" />
+
+<img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/fe/8e/cc/fe8ecc7fb2eabe7638831377b9ab5e10.jpg" alt="" />
+
+ 
+
+   
+
+
+
+  </div>
+</div>
+ <!-- Indian TV shows -->
+
+ <div class="row">
+  <h2>Indian TV shows</h2>
+  <div class="row__posters">
+    <img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/9f/f1/c3/9ff1c3b1ac636f56083e7c707c3bc899.jpg" alt="" />
+
+<img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/4c/91/e0/4c91e008c26f7762e6f02d2be509623d.jpg" alt="" />
+
+<img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/93/90/1e/93901e8a64d900f2ad04485028111e58.jpg" alt="" />
+
+<img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/da/ee/3b/daee3ba74ae00a17bd4f86f3c200980b.jpg" alt="" />
+
+<img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/58/10/91/5810915eb0b63a1a8dc25b2bd3fc2a25.jpg" alt="" />
+
+<img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/e7/e9/01/e7e901dbae210c81eeb6796d96ed5623.jpg" alt="" />
+<img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/14/8d/4a/148d4ad8b65112ecc2c98dd36c449c28.jpg" alt="" />
+<img class="row__poster row__posterLarge" src="https://flxt.tmsimg.com/assets/p20567579_b_v9_aa.jpg" alt="" />
+
+
+
+  </div>
+</div>
+
+ <!-- Anime -->
+
+ <div class="row">
+  <h2>Anime</h2>
+  <div class="row__posters">
+    <img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/9f/3a/8d/9f3a8dfe802f2054e09c6d8f3e97c96d.jpg" alt="" />
+
+<img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/56/09/f7/5609f70d42627cc3e1604c3f923897a2.jpg" alt="" />
+
+<img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/c4/cb/57/c4cb5734c7c94d3413efdaa3bca09a6d.jpg" alt="" />
+
+<img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/1b/07/4a/1b074a35b787b5469588318033e85946.jpg" alt="" />
+
+<img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/e4/2a/f3/e42af3ce6ba552782018e7462b0b7581.jpg" alt="" />
+
+<img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/f7/97/f5/f797f539cc6fc62d0b13ccf678d12ab2.jpg" alt="" />
+<img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/5f/ef/e8/5fefe8cb134bcfd37d1c6d5e0de7f3c7.jpg" alt="" />
+
+    <img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/32/32/0f/32320fa65a773f8ddfb66524318fdd8d.jpg" alt="" />
+
+  <img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/0f/28/2c/0f282c9e4203d88ebc5b9c50b7b69069.jpg" alt="" />
+
+  <img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/06/32/bc/0632bc03964baf490364263dfdb289b8.jpg" alt="" />
+
+  <img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/a0/88/5a/a0885a154cbf0182c9cd8dca39ed6d11.jpg" alt="" />
+
+  <img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/ef/96/ae/ef96ae1045010ad65e16d513da266c67.jpg" alt="" />
+
+<img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/0b/93/84/0b9384b2b4395dbac0e7adc746ee243b.jpg" alt="" />
+
+    <img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/c8/c6/fc/c8c6fc4daf2d7e43ba1a6457c12759fe.jpg" alt="" />
+
+    <img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/39/5e/eb/395eebcc2226a8693be2e5cec30b39de.jpg" alt="" />
+
+    <img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/04/a4/75/04a475b75091236c2889d41dced79ef2.jpg" alt="" />
+
+    <img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/c7/8c/cb/c78ccbee838c949adf6fd7e37eaa97b8.jpg" alt="" />
+
+    <img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/fb/b1/93/fbb193a7d7a3fce373f32ecdc4e923f9.jpg" alt="" />
+
+   <img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/33/51/43/33514395025da7f140eac3c9d75688a6.jpg" alt="" />
+
+    <img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/36/be/69/36be691cbb4b0bb931400df34571350e.jpg" alt="" />
+
+    <img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/2b/a2/fe/2ba2fe44e305dbc0fb5112da1d1b3e40.jpg" alt="" />
+
+    <img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/96/84/f5/9684f5b9c80cb620db681c52afbf2491.jpg" alt="" />
+
+    <img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/bb/c7/41/bbc741d52bbc96566511f5711d589c32.jpg" alt="" />
+
+    <img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/c9/80/69/c980691d3b21074070c28c834eecf84d.jpg" alt="" />
+
+
+
+  </div>
+</div>
+
+ <!-- Netflix originals-->
+
+ <div class="row">
+  <h2>Netflix Originals</h2>
+  <div class="row__posters">
+    <img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/d9/c9/83/d9c983ab65c316308107ac7e296dbb7e.jpg" alt="" />
+
+<img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/93/bc/eb/93bceb9dc583c4511b9742b182b763aa.jpg" alt="" />
+
+<img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/3a/7c/65/3a7c65d37460f4112491023d19603615.jpg" alt="" />
+
+<img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/ce/38/b8/ce38b8164545712a33c83e1a7f10c230.jpg" alt="" />
+
+<img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/10/7c/50/107c50c644c2c71997c29eb50b50a227.jpg" alt="" />
+
+<img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/1b/88/c0/1b88c0dcc38ebfd15b8e1e24a1e5f4d6.jpg" alt="" />
+<img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/50/3d/9a/503d9ac7b6eec7c9926ea79c27b1841a.jpg" alt="" />
+..
+<img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/b8/1e/76/b81e76e84b154c7f212e89d7c27e7b3d.jpg" alt="" />
+<img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/e1/82/aa/e182aa1f53d061f29f078d9d5f6d77da.jpg" alt="" />
+<img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/6b/89/5d/6b895d124eafbeb6d5c923d51cc211e7.jpg" alt="" />
+<img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/d2/08/31/d20831cd46abaadc0ed7226134794748.jpg" alt="" />
+<img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/85/31/8b/85318b5cf9202caf36117df267f5d43e.jpg" alt="" />
+<img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/db/8b/e8/db8be858083191beb73068f6cfb39626.jpg" alt="" />
+
+
+
+
+  </div>
+</div>
+
+ <!-- marvel  -->
+
+ <div class="row">
+  <h2>Marvel</h2>
+  <div class="row__posters">
+    <img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/ed/3a/02/ed3a022bf0511d99a52947c5a72eae54.jpg" alt="" />
+
+<img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/43/73/f2/4373f271e0c8e6f06e47fd7e36704268.jpg" alt="" />
+
+<img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/6b/6e/e7/6b6ee71031c943345fe277700c269244.jpg" alt="" />
+
+<img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/4a/dc/a7/4adca7895bc4a5465d4c73225c502b2a.jpg" alt="" />
+
+<img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/c5/f9/90/c5f99097375fa27e61d9a7cf2431b0b5.jpg" alt="" />
+
+<img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/68/8d/c2/688dc2a09b8e34a9ca54adf7a0a8ebb6.jpg" alt="" />
+<img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/01/85/54/0185541509c39e8ee93b99893b6f3f55.jpg" alt="" />
+
+    <img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/b9/49/f5/b949f577620cb593dd17ea94c57bd1c1.jpg" alt="" />
+
+  <img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/49/98/f7/4998f7ab2699c98a642fc487b139bfe2.jpg" alt="" />
+
+  <img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/6f/49/5b/6f495b048983ed4dbdc6e4d2a30b0d33.jpg" alt="" />
+
+  <img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/f7/1d/58/f71d58d4e4a16adc050e6f1a7178c1fa.jpg" alt="" />
+
+  <img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/d7/41/f1/d741f10bbc1d71b53745c98e9791f13d.jpg" alt="" />
+
+<img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/47/c5/0e/47c50eb7c96e42d725f60c92caeab65d.jpg" alt="" />
+
+    <img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/be/f7/a8/bef7a8ce7d3ba4e7e70503072cbb8981.jpg" alt="" />
+
+    <img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/ef/4b/a9/ef4ba9d82b715f949959d814a9a9b69a.jpg" alt="" />
+
+    <img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/68/59/68/685968b294d9f9d723a5719ebaa7aee1.jpg" alt="" />
+
+    <img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/cb/e0/80/cbe0805aea34cca87635e51a007598a7.jpg" alt="" />
+
+    <img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/03/0c/38/030c38d25f78c26f963bcbca75bab18c.jpg" alt="" />
+
+   <img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/24/b7/63/24b76338c3ebf0d9eb3ad4909264ae2d.jpg" alt="" />
+
+    <img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/89/6c/06/896c066a28c25601d05295273f9d9afe.jpg" alt="" />
+
+    <img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/9a/f8/ec/9af8ec4e7c70b5571529ac0522792807.jpg" alt="" />
+
+    <img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/ff/97/c7/ff97c7b659601a9993a0fc6547dbe337.jpg" alt="" />
+
+    <img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/79/35/36/793536ec938ddfa30c6befe3e1b75b27.jpg" alt="" />
+
+    <img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/cc/c5/cd/ccc5cdac5695479cad2dc68b602a9b5b.jpg" alt="" />
+
+
+
+  </div>
+</div>
+
+ <!-- DC -->
+
+ <div class="row">
+  <h2>DC</h2>
+  <div class="row__posters">
+    <img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/f9/7e/cc/f97ecc584a74634856cc314e5af80a54.jpg" alt="" />
+
+<img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/61/a8/aa/61a8aa2ab46181bf5de774d4246b7229.jpg" alt="" />
+
+<img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/85/ae/77/85ae77b56085ea73c502c33c09c71d86.jpg" alt="" />
+
+<img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/2b/77/6e/2b776e673b710f746eb12ca78f23e03a.jpg" alt="" />
+
+<img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/43/14/e2/4314e2ddd1f987897862f20c6a044523.jpg" alt="" />
+
+<img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/eb/7e/f7/eb7ef72a19eb7f2f0351a09c5950e5a7.jpg" alt="" />
+<img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/5d/0a/e9/5d0ae9e4bf0d8b0b23cf0c6a7339a92f.jpg" alt="" />
+
+    <img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/a0/db/83/a0db8386dd8196ebf1b49e8b8c6a1685.jpg" alt="" />
+
+  <img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/e3/bf/9e/e3bf9e04cc68a7229019cf6db6b93c7e.jpg" alt="" />
+
+  <img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/1b/1d/09/1b1d0937c3b76a61551df77b7449a533.jpg" alt="" />
+
+  <img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/02/91/b0/0291b04b86bcb977781576c909927e0e.jpg" alt="" />
+
+  <img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/3e/e9/19/3ee919542d69a051443556fc227cf529.jpg" alt="" />
+
+<img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/dc/88/a4/dc88a4741b970d0534bb754e7efbc6b2.jpg" alt="" />
+
+    <img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/6d/02/c5/6d02c5c014308beaecf767bbdec03d02.jpg" alt="" />
+
+    <img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/cf/72/26/cf7226db2b89a2c37e93e72dbdba5c82.jpg" alt="" />
+
+    <img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/59/ca/54/59ca54c107ef4a76a1aa0f060763f155.jpg" alt="" />
+
+    <img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/fa/7d/f2/fa7df2dd9206de91d98dfbd971c3637b.jpg" alt="" />
+
+    <img class="row__poster row__posterLarge" src="https://i.pinimg.com/236x/93/84/29/9384297cd2ac58b6c792ac154b9d5a51.jpg" alt="" />
+
+ 
+
+
+
+  </div>
+</div>
+  </body>
+</html>

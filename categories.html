@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="css/categories.css">
+    <script src="https://kit.fontawesome.com/e39b1fcfaf.js" crossorigin="anonymous"></script>
+
+    <title>Watch Movies and Shows</title>
+</head>
+<body>
+    <nav>
+      <div id="nav" class="nav">
+      <div class="container">
+        <ul>
+          <div class="logo">
+            <img src="images/logo.png" alt="Logo">
+        </div>
+          <div class="nav-buttons">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#movies">MOVIES</a></li>
+            <li><a href="#tvseries">TV SERIES</a></li>
+            <li><a href="#anime">ANIME</a></li>
+            <li><a href="categories.html">GENRE</a></li>
+          <li>
+            <div class="header__search">
+            <form>
+              <input type="text" placeholder="Search...">
+              <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+          </div>
+          </li>
+          <li>
+            <button class="notification-button">
+              <i class="fa fa-bell"></i>
+            </button>
+          </li>
+          <li><a href="#login">LOGIN</a></li>
+          </div>
+        </ul>
+      </div>
+    </div>
+</nav>
+<script>
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY >= 100) {
+      nav.classList.add('nav__black');
+    } else {
+      nav.classList.remove('nav__black');
+    }
+  });
+</script>
+
+
+ <!-- header -->
+ <header class="banner">
+  <div class="banner__contents"> 
+  </div>
+  <div class="banner--fadeBottom"></div>
+</header>
+
+<!-- pc categories-->
+<div class=" mobilehidden">
+<div class="row">
+  
+  <div class="row__posters">
+    <img class="row__poster row__posterLarge" src="images/genre/action.jpeg" alt="" />
+
+    <img class="row__poster row__posterLarge" src="images/genre/adventure.jpeg" alt="" />
+
+    <img class="row__poster row__posterLarge" src="images/genre/anime.jpeg" alt="" />
+
+    <img class="row__poster row__posterLarge" src="images/genre/biography.jpeg" alt="" />
+
+    <img class="row__poster row__posterLarge" src="images/genre/bollywood.jpeg" alt="" />
+
+    <img class="row__poster row__posterLarge" src="images/genre/comedy.jpeg" alt="" />
+
+   
+
+
+  </div>
+</div>
+
+<div class="row">
+  
+    <div class="row__posters">
+        <img class="row__poster row__posterLarge" src="images/genre/family.jpeg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="images/genre/history.jpeg" alt="" />
+  
+      <img class="row__poster row__posterLarge" src="images/genre/kdrama.jpeg" alt="" />
+  
+      <img class="row__poster row__posterLarge" src="images/genre/kids.jpeg" alt="" />
+  
+      <img class="row__poster row__posterLarge" src="images/genre/music.jpeg" alt="" />
+  
+      <img class="row__poster row__posterLarge" src="images/genre/romance.jpeg" alt="" />
+  
+    
+    </div>
+  </div>
+
+  <div class="row">
+  
+    <div class="row__posters">
+        <img class="row__poster row__posterLarge" src="images/genre/scifi.jpeg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="images/genre/superhero.jpeg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="images/genre/documentary.jpeg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="images/genre/thriller.jpeg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="images/genre/talkshow.jpeg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="images/genre/standup.jpeg" alt="" />
+  
+      
+  
+    
+    </div>
+  </div> 
+
+  <div class="row">
+  
+    <div class="row__posters">
+        <img class="row__poster row__posterLarge" src="images/genre/war.jpeg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="images/genre/sports.jpeg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="images/genre/horror.jpeg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="images/genre/fantasy.jpeg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="images/genre/mystery.jpeg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="images/genre/reality tv.jpeg" alt="" />
+    </div>
+  </div> 
+</div>
+<!-- mobile categories-->
+<div class=" pchidden">
+<div class="row">
+  <div class="column">
+    <img src="images/genre/action.jpeg" alt="" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/genre/adventure.jpeg" alt="" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/genre/anime.jpeg" alt="" style="width:100%">
+  </div> 
+</div>
+<div class="row">
+  <div class="column">
+    <img src="images/genre/biography.jpeg" alt="" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/genre/bollywood.jpeg" alt="" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/genre/comedy.jpeg" alt="" style="width:100%">
+  </div> 
+</div>
+<div class="row">
+  <div class="column">
+    <img src="images/genre/family.jpeg" alt="" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/genre/history.jpeg" alt="" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/genre/kdrama.jpeg" alt="" style="width:100%">
+  </div> 
+</div>
+<div class="row">
+  <div class="column">
+    <img src="images/genre/kids.jpeg" alt="" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/genre/music.jpeg" alt="" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/genre/romance.jpeg" alt="" style="width:100%">
+  </div> 
+</div>
+<div class="row">
+  <div class="column">
+    <img src="images/genre/scifi.jpeg" alt="" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/genre/superhero.jpeg" alt="" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/genre/documentary.jpeg" alt="" style="width:100%">
+  </div> 
+</div>
+<div class="row">
+  <div class="column">
+    <img src="images/genre/thriller.jpeg" alt="" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/genre/talkshow.jpeg" alt="" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/genre/standup.jpeg" alt="" style="width:100%">
+  </div> 
+</div>
+<div class="row">
+  <div class="column">
+    <img src="images/genre/war.jpeg" alt="" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/genre/sports.jpeg" alt="" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/genre/horror.jpeg" alt="" style="width:100%">
+  </div> 
+</div>
+<div class="row">
+  <div class="column">
+    <img src="images/genre/reality tv.jpeg" alt="" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/genre/mystery.jpeg" alt="" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/genre/fantasy.jpeg" alt="" style="width:100%">
+  </div> 
+</div>
+</div>
+
+
+</body>
+</html>
