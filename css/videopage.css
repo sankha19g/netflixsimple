@@ -1,0 +1,42 @@
+/* body{
+    background-color: yellow;
+} */
+.videocontainer{
+    /* background-color: rgb(255, 0, 0); */
+    /* height: 536px; */
+    width: 1517px;
+    position: relative;
+    margin-top: 73px;
+}
+.video{
+/* background-color: rgb(0, 255, 85); */
+height: 462px;
+}
+.video_name {
+    /* background-color: blueviolet; */
+    color: white;
+    /* bottom: 0;
+    position: absolute; */
+    font-size: 31px;
+    margin-left: 31px;
+    font-weight: 700;
+}
+button.videounderbuttons {
+    padding: 6px;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-size: 17px;
+    margin-left: 31px;
+}
+button.videounderbuttons:hover{
+    color: white;
+    background-color: black;
+}
+.moviedetailundervideo {
+    margin-top: 8px;
+}
+.description{
+    margin-left: 31px;
+    font-size: 19px;
+    margin-top: 10px;
+}
