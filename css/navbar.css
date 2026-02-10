@@ -1,99 +1,158 @@
-.container{
-  width: 100%;
+:root {
+  --nav-bg: rgba(10, 10, 10, 0.88);
+  --nav-bg-solid: #0b0b0b;
+  --nav-border: rgba(255, 255, 255, 0.08);
+  --accent: #e50914;
+  --accent-strong: #ff1f2b;
+  --text: #f5f5f5;
+  --muted: rgba(255, 255, 255, 0.72);
 }
+
+.container {
+  width: 100%;
+  padding: 10px 28px;
+  box-sizing: border-box;
+}
+
 .nav-buttons {
-  float: right;
-
-
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 .logo {
-  float: left;
+  display: flex;
+  align-items: center;
   margin-right: auto;
 }
-
 
 .nav {
   position: fixed;
   top: 0;
   width: 100%;
-    display: flex;
-    justify-content: space-between;
-    z-index: 1;
-  transition-timing-function: ease-in;
-  transition: all 0.5s;
-  }
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.92) 0%, rgba(0, 0, 0, 0.55) 100%);
+  border-bottom: 1px solid var(--nav-border);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(10px);
+  transition: background-color 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+}
 
-  .nav__black {
-    background-color: #111;
-  }
-  
-  
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav li {
-    display: inline-block;
-    margin-left: 20px;
-    padding: 2px;
-    margin: 15px;
-  }
-  
-  nav a {
-    text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
-    color: rgb(255, 249, 249);
-    padding-left: 15px;
-    padding-right: 15px;
-    font-size: 16px;
-  }
+.nav__black {
+  background: var(--nav-bg-solid);
+  border-bottom-color: rgba(229, 9, 20, 0.25);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.45);
+}
 
-nav a:hover{
-    background-color: black;
-    padding-left: 15px;
-    padding-right: 15px;
-    border-radius: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-  }
-  
-  
-/*notification button */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
 
-  .notification-button {
-    height: 30px;
-    width: 30px;
-    background-color: rgb(255, 242, 0);
-    border: none;
-    border-radius: 15px;
-    font-size: 16px;
-    color: black;
-    margin: 6px;
-  }
-  
-  .notification-button:hover {
-    background-color: rgb(208, 12, 12);
-    color: rgb(251, 251, 251);
-    /* transform: scale(1.5); */
-  }
+nav li {
+  display: inline-flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
 
-  /*logo*/
-  img{
-  
-    width: 140px;
-    margin-right: 20px;
-    margin :16px;
-  }
+nav a {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  color: var(--text);
+  padding: 8px 10px;
+  font-size: 14px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  position: relative;
+  transition: color 0.25s ease;
+}
 
-  .loginbutton,.joinbutton{
-    background-color: green;
-    padding: 5px;
-    border-radius: 5px ;
-    cursor: pointer;
-  width:50px}
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 2px;
+  height: 2px;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.25s ease;
+}
+
+nav a:hover {
+  color: #ffffff;
+}
+
+nav a:hover::after {
+  transform: scaleX(1);
+}
+
+/* notification button */
+.notification-button {
+  height: 34px;
+  width: 34px;
+  background-color: #1b1b1b;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 999px;
+  font-size: 14px;
+  color: var(--text);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease;
+}
+
+.notification-button:hover {
+  background-color: var(--accent);
+  border-color: var(--accent);
+  color: #ffffff;
+}
+
+/* logo */
+img {
+  width: 140px;
+  margin-right: 18px;
+  margin: 12px 18px 12px 0;
+}
+
+.loginbutton,
+.joinbutton {
+  background-color: transparent;
+  color: var(--text);
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  transition: border-color 0.25s ease, color 0.25s ease, background-color 0.25s ease;
+}
+
+.joinbutton {
+  background-color: var(--accent);
+  border-color: var(--accent);
+  color: #ffffff;
+}
+
+.loginbutton:hover {
+  border-color: var(--accent-strong);
+  color: #ffffff;
+}
+
+.joinbutton:hover {
+  background-color: var(--accent-strong);
+  border-color: var(--accent-strong);
+}
 
 
 
