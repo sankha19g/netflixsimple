@@ -227,6 +227,28 @@
 }
 
 @media (max-width:452px) {
+  .banner__wrapper {
+    margin-left: 16px;
+    margin-top: 254px;
+  }
+  .banner__buttons {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 6px;
+    margin-left: 0;
+    margin-top: 10px;
+    margin-right: 132px;
+  }
+  .moviedetails1{
+    margin-left: 0;
+  }
+
+
+  .banner__button1, .banner__button2, .banner__button3 {
+    padding: 6px 10px;
+    font-size: 11px;
+    white-space: nowrap;
+  }
   .logo {
     float: left;
     margin-right: auto;
@@ -246,8 +268,8 @@ nav a {
   display: none;
 }
 .imdb {
-  margin-top: 268px;
-  margin-left: 13px;
+  margin-top: 0;
+  margin-left: 0;
   padding-left: 5px;
   padding-right: 5px;
 }
@@ -255,9 +277,167 @@ nav a {
   margin-left: 3px;
 }
 .banner__title {
-  font-size: 51px;
-  margin-top: 253px;
-  margin-left: -19px;
+  font-size: 1.8rem;
+  margin-top: 0;
+ margin-left: -22px;
+}
+.row__posterLarge {
+  max-height: 213px;
+}
+
+
+}
+
+@media (min-width: 453px) and (max-width: 999px) {
+
+  nav li {
+    margin-left: 20px;
+    padding: 1px;
+    margin: 24px;
+}
+.header__search form , .notification-button , .loginbutton , .joinbutton  {
+  display: none;
+}
+.banner__title {
+  font-size: 4rem;
+  padding-bottom: 0.3rem;
+  margin-top: 122px;
+}
+.imdb {
+  margin-bottom: 0px;
+  margin-top: 149px;
+}
+.banner__description {
+  margin-top: 16px;
+}
+
+
+
+
+}
+
+@media (min-width:1000px) {
+  .banner__title {
+    font-size: 4rem;
+    padding-bottom: 0.3rem;
+    margin-top: 122px;
+  }
+  .imdb {
+    margin-bottom: 0px;
+    margin-top: 149px;
+  }
+  .banner__button2 {
+    border-radius: 0.2vw;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 10px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: rgb(0, 0, 0);
+    border-radius: 3px;
+  }
+
+  .banner__button3 {
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 0.2vw;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 10px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: rgb(0, 0, 0);
+        border-radius: 3px;
+  }
+  
+  .banner__button1:hover {
+    color: #000;
+    background-color: #ff0000d8;
+    transition: all 0.2s;
+  }
+  
+
+
+  
+
+
+
+.imdb{
+  display: inline-block;
+  background-color: rgb(236, 236, 34);
+  color: #000;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-left: 30px;
+  padding-left: 10px ;
+  padding-right: 10px ;
+}
+.agerating{
+  display: inline-block;
+  background-color: rgb(90, 89, 89);
+  border-radius: 5px;
+  margin-left: 30px;
+  padding-left: 10px ;
+  padding-right: 10px ;
+}
+.duration{
+  display: inline-block;
+  margin-left: 30px;
+  padding-left: 10px ;
+  padding-right: 10px ;
+}
+
+@media (max-width:452px) {
+  .banner__buttons {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 6px;
+    margin-left: 14px;
+    margin-top: 10px;
+  }
+  .banner__button1, .banner__button2, .banner__button3 {
+    padding: 6px 10px;
+    font-size: 11px;
+    white-space: nowrap;
+  }
+  .logo {
+    float: left;
+    margin-right: auto;
+    margin-left: 133px;
+}
+.banner__description {
+  display: none;
+}
+nav a {
+  font-size: 16px;
+  padding: 4px;
+}
+.nav li {
+  margin: 2px;
+}
+.header__search form , .notification-button , .loginbutton , .joinbutton  {
+  display: none;
+}
+.imdb {
+  margin-top: 0;
+  margin-left: 0;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.agerating , .duration {
+  margin-left: 3px;
+}
+.banner__title {
+  font-size: 1.8rem;
+  margin-top: 0;
+  margin-left: 0;
 }
 .row__posterLarge {
   max-height: 213px;
@@ -310,4 +490,131 @@ nav a {
 
 
 
+}
+
+/* Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬ Responsive: Tablet (Ã¢â€°Â¤ 900px) Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬ */
+@media (max-width: 900px) {
+  .banner {
+    height: 380px;
+    margin-top: 60px;
+  }
+
+  .banner__title {
+    font-size: 2rem;
+  }
+
+  .banner__description {
+    font-size: 0.75rem;
+    width: auto;
+    max-width: 90%;
+  }
+
+  .row__poster,
+  .row__posterLarge,
+  .row__posters img {
+    width: 140px;
+    height: 200px;
+  }
+}
+
+/* Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬ Responsive: Mobile (Ã¢â€°Â¤ 600px) Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬ */
+@media (max-width: 600px) {
+  .banner {
+    height: auto;
+    min-height: 340px;
+    margin-top: 56px;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 20px;
+  }
+
+  .banner__wrapper {
+    margin-left: 16px;
+  }
+
+  .banner__contents {
+    margin-left: 0;
+    padding-top: 0;
+    height: auto;
+  }
+
+  /* Reset the old broken margin-top hacks */
+  .banner__title {
+    font-size: 1.6rem !important;
+    margin-top: 0 !important;
+    margin-left: 0 !important;
+    padding-bottom: 0.2rem;
+  }
+
+  /* Movie meta row */
+  .moviedetails1 {
+    margin-left: 0;
+    margin-top: 6px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  /* Reset old margin-top hacks on metadata badges */
+  .imdb {
+    margin-top: 0 !important;
+    margin-left: 0 !important;
+  }
+
+  .agerating,
+  .duration {
+    margin-left: 0 !important;
+  }
+
+  /* Hide the long description text on small screens */
+  .banner__description {
+    display: none;
+  }
+
+  /* Buttons row */
+  .banner__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+    margin-left: 0;
+  }
+
+  .banner__button1,
+  .banner__button2,
+  .banner__button3 {
+    padding: 8px 18px;
+    font-size: 13px;
+  }
+
+  /* Row headings */
+  .row h2 {
+    font-size: 1rem;
+    margin-left: 12px;
+  }
+
+  .row {
+    margin-left: 0;
+  }
+
+  .row__posters {
+    padding: 10px 12px;
+  }
+
+  .row__poster,
+  .row__posterLarge,
+  .row__posters img {
+    width: 105px;
+    height: 152px;
+    margin-right: 6px;
+  }
+
+  .trending {
+    margin-top: 16px !important;
+    font-size: 1rem;
+  }
 }

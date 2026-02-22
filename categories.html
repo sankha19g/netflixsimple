@@ -39,10 +39,34 @@
             </button>
           </li>
           <li><a href="#login">LOGIN</a></li>
+          <!-- Hamburger button (mobile only) -->
+          <li class="hamburger-li">
+            <button class="hamburger" id="hamburgerBtn" aria-label="Open menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </li>
         </ul>
       </div>
     </div>
-</nav>
+    </nav>
+
+    <!-- Mobile menu overlay -->
+    <div class="mobile-menu" id="mobileMenu">
+      <button class="close-btn" id="closeMenu" aria-label="Close menu">&times;</button>
+      <a href="index.html">HOME</a>
+      <a href="#movies">MOVIES</a>
+      <a href="#tvseries">TV SERIES</a>
+      <a href="#anime">ANIME</a>
+      <a href="categories.html">GENRE</a>
+      <div class="m-search">
+        <input type="text" placeholder="Search..." />
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+      <a href="#login" style="font-family:'Montserrat',sans-serif;font-size:20px;color:#f5f5f5;text-decoration:none;letter-spacing:0.12em;text-transform:uppercase">LOGIN</a>
+    </div>
+
 <script>
   const nav = document.getElementById('nav');
   window.addEventListener('scroll', () => {
@@ -51,6 +75,14 @@
     } else {
       nav.classList.remove('nav__black');
     }
+  });
+  const hamburgerBtn = document.getElementById('hamburgerBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const closeMenu = document.getElementById('closeMenu');
+  hamburgerBtn.addEventListener('click', () => mobileMenu.classList.add('open'));
+  closeMenu.addEventListener('click', () => mobileMenu.classList.remove('open'));
+  mobileMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => mobileMenu.classList.remove('open'));
   });
 </script>
 

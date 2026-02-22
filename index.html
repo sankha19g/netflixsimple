@@ -46,10 +46,34 @@
               <button class="loginbutton">Login</button>
               <button class="joinbutton">Join</button>
             </li>
+            <!-- Hamburger button (mobile only) -->
+            <li class="hamburger-li">
+              <button class="hamburger" id="hamburgerBtn" aria-label="Open menu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
+
+    <!-- Mobile menu overlay -->
+    <div class="mobile-menu" id="mobileMenu">
+      <button class="close-btn" id="closeMenu" aria-label="Close menu">&times;</button>
+      <a href="index.html">HOME</a>
+      <a href="#movies">MOVIES</a>
+      <a href="#tvseries">TV SERIES</a>
+      <a href="categories.html">GENRE</a>
+      <div class="m-search">
+        <input type="text" placeholder="Search..." />
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+      <button class="m-btn">Login</button>
+      <button class="m-btn join">Join</button>
+    </div>
+
     <script>
       const nav = document.getElementById("nav");
       window.addEventListener("scroll", () => {
@@ -59,36 +83,46 @@
           nav.classList.remove("nav__black");
         }
       });
+      const hamburgerBtn = document.getElementById('hamburgerBtn');
+      const mobileMenu = document.getElementById('mobileMenu');
+      const closeMenu = document.getElementById('closeMenu');
+      hamburgerBtn.addEventListener('click', () => mobileMenu.classList.add('open'));
+      closeMenu.addEventListener('click', () => mobileMenu.classList.remove('open'));
+      mobileMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => mobileMenu.classList.remove('open'));
+      });
     </script>
 
 <!-- header -->
 
     <header class="banner">
-      <div class="banner__contents">
-        <h1 class="banner__title">Stranger Things</h1>
-       
-                  </div>
-                 
-                  <div class="moviedetails1">
-                    <span class="imdb">7.3 IMDB</span>
-                    <span class="agerating">16+</span>
-                    <span class="duration">2h 21min</span>
-                  </div>
-
-                  <h1 class="banner__description">
-                    "Stranger Things" is a thrilling sci-fi series set in the 1980s, following a group of kids in a small town who encounter 
-                    supernatural forces and government conspiracies when their friend mysteriously disappears, leading them on a quest to 
-                    find him and uncover a parallel dimension called the Upside Down.
-                  </h1>
-        <div class="banner__buttons">
-          <a class="banner__button1" href="videopage.html">Play</a>
-          <button class="banner__button2">Add to Watchlist</button>
-          <a
-            class="banner__button3"
-            href="https://www.imdb.com/title/tt4574334/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_stran"
-            style="color: white;"
-          >Info</a>
-        </div>
+      <div class="banner__wrapper">
+        <div class="banner__contents">
+          <h1 class="banner__title">Stranger Things</h1>
+         
+                    </div>
+                   
+                    <div class="moviedetails1">
+                      <span class="imdb">7.3 IMDB</span>
+                      <span class="agerating">16+</span>
+                      <span class="duration">2h 21min</span>
+                    </div>
+  
+                    <h1 class="banner__description">
+                      "Stranger Things" is a thrilling sci-fi series set in the 1980s, following a group of kids in a small town who encounter 
+                      supernatural forces and government conspiracies when their friend mysteriously disappears, leading them on a quest to 
+                      find him and uncover a parallel dimension called the Upside Down.
+                    </h1>
+          <div class="banner__buttons">
+            <a class="banner__button1" href="videopage.html">Play</a>
+            <button class="banner__button2">Add to Watchlist</button>
+            <a
+              class="banner__button3"
+              href="https://www.imdb.com/title/tt4574334/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_stran"
+              style="color: white;"
+            >Info</a>
+          </div>
+      </div>
 
     </header>
 
