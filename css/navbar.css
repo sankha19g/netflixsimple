@@ -32,7 +32,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  z-index: 10;
+  z-index: 11;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.92) 0%, rgba(0, 0, 0, 0.55) 100%);
   border-bottom: 1px solid var(--nav-border);
   box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35);
@@ -240,6 +240,7 @@ img {
   border-radius: 999px;
   overflow: hidden;
   background: rgba(255,255,255,0.06);
+  margin-top: -335px;
 }
 
 .mobile-menu .m-search input {
@@ -259,6 +260,113 @@ img {
   padding: 8px 14px;
   cursor: pointer;
 }
+
+/* Login Dropdown */
+.login-container {
+  position: relative;
+}
+
+.login-dropdown {
+  position: absolute;
+  top: calc(100% + 20px);
+  right: -20px;
+  width: 250px;
+  background-color: var(--nav-bg-solid);
+  border: 1px solid var(--nav-border);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  z-index: 100;
+  pointer-events: none;
+}
+
+.login-dropdown.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.login-dropdown::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  right: 40px;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid var(--nav-bg-solid);
+}
+
+.login-dropdown form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.login-dropdown input {
+  width: 100%;
+  padding: 12px;
+  background: #333;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.login-dropdown input:focus {
+  outline: none;
+  background: #444;
+}
+
+.login-dropdown .login-submit {
+  width: 100%;
+  padding: 14px;
+  background-color: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: inherit;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+  margin-top: 10px;
+}
+
+.login-dropdown .login-submit:hover {
+  background-color: var(--accent-strong);
+}
+
+.login-help {
+  text-align: right;
+  margin: 0;
+}
+
+.login-help a {
+  padding: 0;
+  font-size: 12px;
+  color: #b3b3b3;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.login-help a::after {
+  display: none;
+}
+
+.login-help a:hover {
+  text-decoration: underline;
+  color: #b3b3b3;
+}
+
 
 /* ─── Mobile breakpoints ─────────────────────────── */
 @media (max-width: 768px) {
@@ -298,3 +406,6 @@ img {
     gap: 0;
   }
 }
+
+*::-webkit-scrollbar { display: none !important; width: 0 !important; height: 0 !important; background: transparent !important; }
+* { -ms-overflow-style: none !important; scrollbar-width: none !important; scrollbar-color: transparent transparent !important; }
